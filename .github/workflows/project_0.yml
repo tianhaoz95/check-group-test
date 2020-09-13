@@ -1,6 +1,8 @@
 name: Project 0
 on:
-  push:
+  pull_request:
+    branches:
+      - "master"
     paths:
       - "projects/project_0/**"
 jobs:
