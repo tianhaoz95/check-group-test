@@ -3,21 +3,21 @@ subprojects:
     paths:
       - "**"
     checks:
-      - "common_check"
+      - "common"
   - id: documentation
     paths:
       - "docs/**"
     checks:
-      - "docs_check"
+      - "common"
   - id: project_0
     paths:
       - "projects/project_0/**"
     checks:
-      - "project_0_check"
-      - "common_check"
+      - "project_0"
+      - "common"
   - id: project_1
     paths:
       - "projects/project_1/**"
     checks:
-      - "project_1_check"
-      - "common_check"
+      - "project_1"
+      - "common"

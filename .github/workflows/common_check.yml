@@ -1,7 +1,7 @@
 name: Common check
 on: push
 jobs:
-  project_0:
+  common:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code

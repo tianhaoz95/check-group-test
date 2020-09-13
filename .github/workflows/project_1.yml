@@ -4,7 +4,7 @@ on:
     paths:
       - "projects/project_1/**"
 jobs:
-  project_0:
+  project_1:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
