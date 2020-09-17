@@ -21,3 +21,9 @@ subprojects:
     checks:
       - "project_1"
       - "common"
+  - id: project_2
+    paths:
+      - "projects/project_2/**"
+    checks:
+      - "project_2_which_does_not_exist"
+      - "common"
