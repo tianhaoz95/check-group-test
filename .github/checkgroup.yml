@@ -1,3 +1,4 @@
+custom_service_name: "Awesome name that is better than Check Group"
 subprojects:
   - id: common
     paths:
