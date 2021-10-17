@@ -5,6 +5,10 @@ subprojects:
       - "**"
     checks:
       - "common"
+  - id: invalid
+    paths:
+      - "**"
+    checks:
   - id: documentation
     paths:
       - "docs/**"
