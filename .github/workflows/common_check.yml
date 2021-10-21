@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v2
+      - name: wait
+        run: sleep 5
       - name: test
         run: echo "I am common check and I will always succeed."
