@@ -17,3 +17,6 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v2
       - run: ./scripts/create-a-ton-of-checks.sh
+        env:
+          CURRENT_SHA: ${{ github.event.workflow_run.head_commit.id }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
