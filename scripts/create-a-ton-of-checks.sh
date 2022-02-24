@@ -6,7 +6,7 @@ create_single_check () {
         -H "Accept: application/vnd.github.v3+json" \
         --header 'authorization: Bearer $GITHUB_TOKEN' \
         --header 'content-type: application/json' \
-        https://api.github.com/repos/${{ github.repository }}/check-runs \
+        https://api.github.com/repos/tianhaoz95/check-group-test/check-runs \
         -d '{"name":"fake_check_$CURRENT_CHECK_ID","head_sha":"$CURRENT_SHA"}'
 }
 
