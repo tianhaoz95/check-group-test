@@ -5,7 +5,7 @@ create_single_check () {
         -X POST \
         -H "Accept: application/vnd.github.v3+json" \
         https://api.github.com/repos/tianhaoz95/check-group-test/check-runs \
-        -d '{"name":"fake_check_$CURRENT_CHECK_ID","head_sha":"$CURRENT_SHA"}'
+        -d '{"name":"fake_check_$CURRENT_CHECK_ID","head_sha":"$GITHUB_SHA"}'
 }
 
 for i in {1..50}
