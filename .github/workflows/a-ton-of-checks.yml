@@ -10,20 +10,14 @@ on:
       - "master"
     paths:
       - "a-ton-of-checks.md"
-permissions: write-all
+strategy:
+  matrix:
+    run_id: [1, 2, 3]
 jobs:
   create-a-ton-of-checks:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
-        uses: actions/checkout@v2
-      - name: Check user permission
-        id: checks
-        uses: scherermichael-oss/action-has-permission@master
-        with:
-          required-permission: write
+      - name: Run ${{ matrix.run_id }}
+        run: echo "fake check $RUN_ID"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: ./scripts/create-a-ton-of-checks.sh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_ID: ${{ matrix.run_id }}
