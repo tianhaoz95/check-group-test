@@ -10,12 +10,12 @@ on:
       - "master"
     paths:
       - "a-ton-of-checks.md"
-strategy:
-  matrix:
-    run_id: [1, 2, 3]
 jobs:
   create-a-ton-of-checks:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        run_id: [1, 2, 3]
     steps:
       - name: Run ${{ matrix.run_id }}
         run: echo "fake check $RUN_ID"
