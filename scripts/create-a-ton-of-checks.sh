@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "head sha: $GITHUB_SHA"
+
 create_single_check () {
     curl \
         -X POST \
