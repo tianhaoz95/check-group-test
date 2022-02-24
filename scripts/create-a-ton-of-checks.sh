@@ -1,6 +1,6 @@
 #!/bin/sh
 
-function create_single_check {
+create_single_check () {
     curl \
         -X POST \
         -H "Accept: application/vnd.github.v3+json" \
