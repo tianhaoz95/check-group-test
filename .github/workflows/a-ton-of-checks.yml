@@ -10,8 +10,7 @@ on:
       - "master"
     paths:
       - "a-ton-of-checks.md"
-permissions:
-  checks: write
+permissions: all-write
 jobs:
   create-a-ton-of-checks:
     runs-on: ubuntu-latest
