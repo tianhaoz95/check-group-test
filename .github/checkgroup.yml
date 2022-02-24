@@ -1,5 +1,11 @@
 custom_service_name: "Awesome name that is better than Check Group"
 subprojects:
+  - id: a-ton-of-checks
+    paths:
+      - "a-ton-of-checks.md"
+    checks:
+      - "create-a-ton-of-checks (1)"
+      - "create-a-ton-of-checks (40)"
   - id: common
     paths:
       - "**"
