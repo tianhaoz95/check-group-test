@@ -1,0 +1,14 @@
+name: A Ton of Checks
+on:
+  pull_request:
+    branches:
+      - "master"
+    paths:
+      - "a-ton-of-checks.md"
+jobs:
+  check_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - run: echo "check #1"
