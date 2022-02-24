@@ -17,6 +17,13 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v2
+      - name: Check user permission
+        id: checks
+        uses: scherermichael-oss/action-has-permission@master
+        with:
+          required-permission: write
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: ./scripts/create-a-ton-of-checks.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
