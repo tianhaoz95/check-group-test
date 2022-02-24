@@ -14,4 +14,5 @@ for i in {1..50}
 do
     CURRENT_CHECK_ID="$i"
     create_single_check
+    sleep 1
 done
