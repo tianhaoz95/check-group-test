@@ -10,7 +10,7 @@ create_single_check () {
         -d '{"name":"fake_check_$CURRENT_CHECK_ID","head_sha":"$GITHUB_SHA"}'
 }
 
-for i in {1..50}
+for i in {1..100}
 do
     CURRENT_CHECK_ID="$i"
     create_single_check

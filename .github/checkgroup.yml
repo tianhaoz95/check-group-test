@@ -5,7 +5,7 @@ subprojects:
       - "a-ton-of-checks.md"
     checks:
       - "create-a-ton-of-checks (1)"
-      - "create-a-ton-of-checks (40)"
+      - "create-a-ton-of-checks (60)"
   - id: common
     paths:
       - "**"
